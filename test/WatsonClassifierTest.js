@@ -184,7 +184,7 @@ describe('WatsonClassifier', function () {
             const WatsonClassifier = require('../lib/WatsonClassifier');
             try {
                 var classifier = new WatsonClassifier('classifierId', {username: 'myusername', password: 'supercomplicatedpassword'});
-                classifier.addDocument();
+                classifier.train();
                 return done('should have failed');
             } catch (e) {
                 expect(e).toExist();
