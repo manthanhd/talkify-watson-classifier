@@ -4,7 +4,7 @@
   "description": "IBM Watson NLP Classifier for Talkify",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "keywords": [
@@ -15,6 +15,10 @@
     "classifier",
     "nlp"
   ],
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/manthanhd/talkify-watson-classifier.git"
+  },
   "author": "Manthan Dave <manthanhd@live.com> (https://www.manthanhd.com)",
   "license": "MIT",
   "devDependencies": {
@@ -26,7 +30,6 @@
     "mockery": "^2.0.0"
   },
   "dependencies": {
-    "talkify": "^1.0.0",
     "watson-developer-cloud": "^2.8.1"
   }
 }
