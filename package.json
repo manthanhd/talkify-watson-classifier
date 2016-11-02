@@ -15,7 +15,7 @@
     "classifier",
     "nlp"
   ],
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/manthanhd/talkify-watson-classifier.git"
   },
@@ -30,6 +30,7 @@
     "mockery": "^2.0.0"
   },
   "dependencies": {
+    "talkify-classifier": "^1.0.2",
     "watson-developer-cloud": "^2.8.1"
   }
 }
